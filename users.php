@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <form method="post" action="login.php">
     <table border="0" cellpadding="0">
         <tr>
@@ -39,3 +42,6 @@ echo "Invalid Username or Password";
 }
 } 
 ?> -->
+
+</head>
+</html>
