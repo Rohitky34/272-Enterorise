@@ -17,6 +17,7 @@
           $line = fgets($fh, 4096);
           $user_pass = explode(":", $line);
           if($user_pass[0] == $username) {
+            echo("hello");
             if(rtrim($user_pass[1]) == $pwd) {
               $match = 1;
               break;
@@ -36,4 +37,3 @@
         check_password($_POST['username'], $_POST['password']);
     }
     ?>
-</div>  
