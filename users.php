@@ -17,8 +17,6 @@
           $line = fgets($fh, 4096);
           $user_pass = explode(":", $line);
           if($user_pass[0] == $username) {
-            echo "this is file password" .rtrim($user_pass[1]);
-            echo "this is entered pswd" .rtrim($pwd);
             if(rtrim($user_pass[1]) == rtrim($pwd)) {
               $match = 1;
               break;
@@ -27,7 +25,7 @@
           $match = 2; 
         }
         if($match == '1') {
-           echo "<b>Login Success!</b>";
+           header("Location: login.php");
         } 
         if($match == '2') {
            echo "<b>Login Failed!</b>";
