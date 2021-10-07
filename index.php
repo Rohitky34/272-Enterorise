@@ -306,7 +306,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<a href="services.html">Services</a> |
 								<a href="price.html">Price</a> |
 								<a href="projects.html">Projects</a> |
-								<a href="contact.html">Contact</a>
+								<a href="contact.php">Contact</a>
 							</p>
 						</div>
 					</div>
