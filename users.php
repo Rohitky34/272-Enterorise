@@ -19,7 +19,7 @@
             <input type="reset" value="Reset" name="reset"/></td>
 </form>
 
-        <?php
+<!-- <?php
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -38,4 +38,4 @@ echo "Invalid Username or Password";
 }
 }
 } 
-?>
+?> -->
