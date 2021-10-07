@@ -1,9 +1,4 @@
-<form action="" method="post">
-   <h2>Username:</h2><input type="text" id="username"><br>
-   <h2>Password:</h2><input type="password" id="password"><br>
-   <input type="submit" value ="submit">
-    <input type="reset" value ="reset">
-</form>
+
 
 <?php 
     $myFile = "users.txt";
@@ -24,3 +19,10 @@ foreach($contents as $values){
     }
 }
 ?>
+
+<form action=" " method="post">
+   <h2>Username:</h2><input type="text" id="username"><br>
+   <h2>Password:</h2><input type="password" id="password"><br>
+   <input type="submit" value ="submit">
+    <input type="reset" value ="reset">
+</form>
