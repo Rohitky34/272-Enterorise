@@ -23,7 +23,7 @@ if ($success) {
     echo "<br> You have entered the wrong username or password. Please try again. <br>";
 }
 ?>
-<form method="post" action="login.php">
+<form method="post">
     <table border="0" cellpadding="0">
         <tr>
             <td align="center" colspan="5">
