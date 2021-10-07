@@ -51,7 +51,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#">Dummy Link3</a></li>
 						</ul>
 					</li>
-					<li><a href="contact.php">Contactssss</a></li>
+					<li><a href="contact.php">Contact</a></li>
+                    <li><a href="users.php">Users</a></li>
 
 				</ul>
 			</div>
