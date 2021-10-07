@@ -1,6 +1,6 @@
 <html>
 <head>
-<title> Reg Page   </title>
+<title> Login Page   </title>
 </head>
 <body>
 <form action="" method="post">
@@ -14,38 +14,60 @@
     <td><input type="password" name="pass"></td>
   </tr>
   <tr>
-    <td> <input type="submit" name="reg" value="REG"></td>
+    <td> <input type="submit" name="login" value="LOGIN"></td>
     <td></td>
   </tr>
 </table>
 </form>
 </body>
 </html>
+<?php  session_start(); ?>  // session starts with the help of this function 
+ 
 <?php
-$userN = $_POST['user-name'];
-$passW = $_POST['pass-word'];
-$userlist = file ('users.txt');
-
-$email = "";
-$company = "";
-
-$success = false;
-foreach ($userlist as $user) {
-    $user_details = explode('|', $user);
-    if ($user_details[0] == $userN && $user_details[1] == $passW) {
-        $success = true;
-        $email = $user_details[2];
-        $company = $user_details[3];
-        break;
-    }
+ 
+if(isset($_SESSION['use']))   // Checking whether the session is already there or not if 
+                              // true then header redirect it to the home page directly 
+ {
+    header("Location:users.php"); 
+ }
+else
+{
+    include 'login.php';
 }
-
-if ($success) {
-    echo "<br> Hi $userN you have been logged in. <br>";
-} else {
-    echo "<br> You have entered the wrong username or password. Please try again. <br>";
+ 
+if(isset($_POST['login']))   
+{
+     $user = $_POST['user'];
+     $pass = $_POST['pass'];
+ 
+    if(isset($_POST["user"]) && isset($_POST["pass"])){
+    $file = fopen('users.txt', 'r');
+    $good=false;
+    while(!feof($file)){
+        $line = fgets($file);
+        $array = explode(";",$line);
+    if(trim($array[0]) == $_POST['user'] && trim($array[1]) == $_POST['pass']){
+            $good=true;
+            break;
+        }
+    }
+ 
+    if($good){
+    $_SESSION['use'] = $user;
+        echo '<script type="text/javascript"> window.open("users.php","_self");</script>';  
+    }else{
+        echo "invalid UserName or Password";
+    }
+    fclose($file);
+    }
+    else{
+        include 'login.php';
+    }
+ 
 }
 ?>
+
+
 <!-- <form action=" " method="post">
     <table border="0" cellpadding="0">
         <tr>
