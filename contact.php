@@ -127,8 +127,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									$lines = file($myFile);//file in to an array
 									var_dump($lines);
 
-									unset($lines[0]);
-									unset($lines[1]); // we do not need these lines.
+									// unset($lines[0]);
+									// unset($lines[1]); // we do not need these lines.
 
 									foreach($lines as $line) 
 									{
