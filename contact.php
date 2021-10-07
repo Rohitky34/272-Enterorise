@@ -123,12 +123,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<h5>Phone</h5>
 									<p>+09 123 1234 123</p> -->
 									<?php
-									$fh = fopen('filename.txt','r');
-									while ($line = fgets($fh)) {
-									
-									echo($line);
+									$file = fopen("test.txt","r");
+
+									while(! feof($file))
+									{
+									echo fgets($file). "<br />";
 									}
-									fclose($fh);
+
+									fclose($file);
 									?>
 								</div>
 							</div>
