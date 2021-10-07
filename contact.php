@@ -123,7 +123,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<h5>Phone</h5>
 									<p>+09 123 1234 123</p> -->
 									<?php
-									$file = fopen("test.txt","r");
+									$file = fopen("data.txt","r");
 
 									while(! feof($file))
 									{
