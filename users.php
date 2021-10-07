@@ -2,7 +2,7 @@
     <table border="0" cellpadding="0">
         <tr>
             <td align="center" colspan="5">
-                    <h4>Diary Login <br /><small>Please Login to manage Diary posts.</small></h4>
+                    <h4>User Login <br /><small>Please Login to the portal.</small></h4>
             </td>
         </tr>
         <tr>
@@ -17,4 +17,25 @@
         <tr>
             <td align="left"><input type="submit" value="Login" name="submitBtn"/>
             <input type="reset" value="Reset" name="reset"/></td>
-        </form>
+</form>
+
+        <?php
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+if (isset($_POST['submitBtn'])){
+$file = explode( "PHP_EOL", file_get_contents( "users.txt" ));
+foreach( $file as $line ) {
+list($username,$password) == explode( "||", $line );
+
+if($_POST['username'] = $username && $_POST['password']) {
+// User authenticated correctly
+echo "You've successfully logged in!";
+echo "<br>";
+} else {
+// User did not authenticate
+echo "Invalid Username or Password";
+}
+}
+} 
+?>
