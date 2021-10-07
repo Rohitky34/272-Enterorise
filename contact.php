@@ -52,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#">Dummy Link3</a></li>
 						</ul>
 					</li>
-					<li class="active"><a href="contact.html">Contact</a></li>
+					<li class="active"><a href="contact.php">Contact</a></li>
 				</ul>
 			</div>
 			<!--/.nav-collapse -->
@@ -216,7 +216,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<a href="services.html">Services</a> |
 								<a href="price.html">Price</a> |
 								<a href="projects.html">Projects</a> |
-								<a href="contact.html">Contact</a>
+								<a href="contact.php">Contact</a>
 							</p>
 						</div>
 					</div>
