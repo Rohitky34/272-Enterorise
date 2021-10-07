@@ -16,19 +16,13 @@
         while(!feof($fh)) {
           $line = fgets($fh, 4096);
           $user_pass = explode(":", $line);
-          echo $user_pass[0];   
-          echo $username; 
           if($user_pass[0] == $username) {
             if(rtrim($user_pass[1]) == $pwd) {
               $match = 1;
               break;
             }
-          }else{
-            $match = 2; 
           }
-          
-
-          
+          $match = 2; 
         }
         if($match == '1') {
            echo "<b>Login Success!</b>";
