@@ -17,8 +17,9 @@
           $line = fgets($fh, 4096);
           $user_pass = explode(":", $line);
           if($user_pass[0] == $username) {
-            echo $user_pass[1];
-            if(rtrim($user_pass[1]) == $pwd) {
+            echo "this is file password" .rtrim($user_pass[1]);
+            echo "this is entered pswd" .rtrim($pwd);
+            if(rtrim($user_pass[1]) == rtrim($pwd)) {
               $match = 1;
               break;
             }
