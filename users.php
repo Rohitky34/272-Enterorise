@@ -1,90 +1,26 @@
-<html>
-<head>
-<title> Login Page   </title>
-</head>
-<body>
-<form action="" method="post">
-    <table width="200" border="0">
-  <tr>
-    <td>  UserName</td>
-    <td> <input type="text" name="user" > </td>
-  </tr>
-  <tr>
-    <td> PassWord  </td>
-    <td><input type="password" name="pass"></td>
-  </tr>
-  <tr>
-    <td> <input type="submit" name="login" value="LOGIN"></td>
-    <td></td>
-  </tr>
-</table>
+<form action="sessionOpen.php" method="post">
+   <h2>Username:</h2><input type="text" id="username"><br>
+   <h2>Password:</h2><input type="password" id="password"><br>
+   <input type="submit" value ="submit">
+    <input type="reset" value ="reset">
 </form>
-</body>
-</html>
-<?php  session_start(); ?>  // session starts with the help of this function 
- 
-<?php
- 
-if(isset($_SESSION['use']))   // Checking whether the session is already there or not if 
-                              // true then header redirect it to the home page directly 
- {
-    header("Location:users.php"); 
- }
-else
-{
-    include 'login.php';
-}
- 
-if(isset($_POST['login']))   
-{
-     $user = $_POST['user'];
-     $pass = $_POST['pass'];
- 
-    if(isset($_POST["user"]) && isset($_POST["pass"])){
-    $file = fopen('users.txt', 'r');
-    $good=false;
-    while(!feof($file)){
-        $line = fgets($file);
-        $array = explode(";",$line);
-    if(trim($array[0]) == $_POST['user'] && trim($array[1]) == $_POST['pass']){
-            $good=true;
-            break;
-        }
-    }
- 
-    if($good){
-    $_SESSION['use'] = $user;
-        echo '<script type="text/javascript"> window.open("users.php","_self");</script>';  
-    }else{
-        echo "invalid UserName or Password";
-    }
-    fclose($file);
-    }
+
+<?php 
+    $myFile = "users.txt";
+    $contents = file_get_contents($myFile);
+    $contents = explode("\n", $contents);
+
+foreach($contents as $values){
+     $loginInfo = explode(":", $values);
+        $user = $loginInfo[0];
+        $password = $loginInfo[1];
+
+    if($user == $_POST['username'] && $password == $_POST['password']){
+        session_start(); 
+        header('Location: users.php');
+   }
     else{
-        include 'login.php';
+        echo '<script>alert("Please verify your username and password.");</script>'
     }
- 
 }
 ?>
-
-
-<!-- <form action=" " method="post">
-    <table border="0" cellpadding="0">
-        <tr>
-            <td align="center" colspan="5">
-                    <h4>User Login <br /><small>Please Login to the portal.</small></h4>
-            </td>
-        </tr>
-        <tr>
-            <td align="right"><b>Username:</b></td>
-            <td align="left"><input type="text" name="username" /></td>                     
-        </tr>   
-        <tr>
-            <td align="right"><b>Password:</b></td>
-            <td align="left"><input type="password" name="password"/></td>
-        </tr>
-
-        <tr>
-            <td align="left"><input type="submit" value="Login" name="submitBtn"/>
-            <input type="reset" value="Reset" name="reset"/></td>
-</form> -->
