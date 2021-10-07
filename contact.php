@@ -114,14 +114,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="col-md-6">
 								<h3 class="section-title">Office Address</h3>
 								<div class="contact-info">
-									<h5>Address</h5>
+									<!-- <h5>Address</h5>
 									<p>5th Street, Carl View - United States</p>
 									
 									<h5>Email</h5>
 									<p>info@webthemez.com</p>
 									
 									<h5>Phone</h5>
-									<p>+09 123 1234 123</p>
+									<p>+09 123 1234 123</p> -->
+									<?php
+									$myFile = "data.txt";
+									$lines = file($myFile);//file in to an array
+									var_dump($lines);
+
+									unset($lines[0]);
+									unset($lines[1]); // we do not need these lines.
+
+									foreach($lines as $line) 
+									{
+										$var = explode(':', $line, 2);
+										$arr[$var[0]] = $var[1];
+									}
+
+									print_r($arr);
+									?>
 								</div>
 							</div>
 							<div class="col-md-6">
