@@ -12,7 +12,7 @@
         $pwd_file = 'users.txt';
         if(!$fh = fopen($pwd_file, "r")) {die("<p>Could not open password file");}
         $match = 0;
-        $pwd = md5($password);
+        $pwd = $password;
         while(!feof($fh)) {
           $line = fgets($fh, 4096);
           $user_pass = explode(":", $line);
