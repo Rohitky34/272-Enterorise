@@ -6,6 +6,7 @@
       <input type="password" class="form-control" name="password" placeholder="Password" required=""/><br/>
       <button class="btn btn-small btn-primary btn-block" type="submit">Login</button>  
     </form>
+</div>
     <?php 
     function check_password($username, $password){
         $pwd_file = 'users.txt';
@@ -22,8 +23,12 @@
               $match = 1;
               break;
             }
+          }else{
+            $match = 2; 
           }
-          $match = 2; 
+          
+
+          
         }
         if($match == '1') {
            echo "<b>Login Success!</b>";
