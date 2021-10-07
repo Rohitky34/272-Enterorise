@@ -1,3 +1,26 @@
+<html>
+<head>
+<title> Reg Page   </title>
+</head>
+<body>
+<form action="" method="post">
+    <table width="200" border="0">
+  <tr>
+    <td>  UserName</td>
+    <td> <input type="text" name="user" > </td>
+  </tr>
+  <tr>
+    <td> PassWord  </td>
+    <td><input type="password" name="pass"></td>
+  </tr>
+  <tr>
+    <td> <input type="submit" name="reg" value="REG"></td>
+    <td></td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
 <?php
 $userN = $_POST['user-name'];
 $passW = $_POST['pass-word'];
@@ -23,7 +46,7 @@ if ($success) {
     echo "<br> You have entered the wrong username or password. Please try again. <br>";
 }
 ?>
-<form method="post">
+<!-- <form action=" " method="post">
     <table border="0" cellpadding="0">
         <tr>
             <td align="center" colspan="5">
@@ -42,4 +65,4 @@ if ($success) {
         <tr>
             <td align="left"><input type="submit" value="Login" name="submitBtn"/>
             <input type="reset" value="Reset" name="reset"/></td>
-</form>
+</form> -->
