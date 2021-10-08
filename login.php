@@ -16,7 +16,7 @@
           $match = 2; 
         }
         if($match == '1') {
-           echo "<b>Login Successful, List of Users are</b>" 
+        //    echo "<b>Login Successful, List of Users are</b>" 
            $file = fopen("users.txt","r");
 
             while(! feof($file))
