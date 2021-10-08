@@ -24,7 +24,7 @@
             echo fgets($file). "<br />";
             }
 
-fclose($file);
+        fclose($file);
         } 
         if($match == '2') {
            echo "<b>Login Failed Please Check Your Credentials</b>";
