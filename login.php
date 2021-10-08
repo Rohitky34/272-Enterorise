@@ -16,6 +16,7 @@
           $match = 2; 
         }
         if($match == '1') {
+           echo "<b>Login Successful, List of Users are</b>" 
            $file = fopen("users.txt","r");
 
             while(! feof($file))
@@ -26,7 +27,7 @@
 fclose($file);
         } 
         if($match == '2') {
-           echo "<b>Login Failed!</b>";
+           echo "<b>Login Failed Please Check Your Credentials</b>";
         } 
         fclose($fh);
     }
