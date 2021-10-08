@@ -1,8 +1,8 @@
 
-<h2> Welcome</h2>
+
 <?php
-if($_GET['username']){
-    $userName = $_GET['username'];
-    echo $userName;
+<h2> Welcome $_POST['username']</h2>
+if($_POST['username']){
+    echo $_POST['username'];
 }
 ?>
