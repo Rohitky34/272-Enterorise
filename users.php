@@ -9,7 +9,7 @@
 </div>
     <?php 
     function check_password($username, $password){
-        $pwd_file = 'users.txt';
+        $pwd_file = 'userAdmin.txt';
         if(!$fh = fopen($pwd_file, "r")) {die("<p>Could not open password file");}
         $match = 0;
         $pwd = $password;

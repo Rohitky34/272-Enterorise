@@ -114,14 +114,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<div class="col-md-6">
 								<h3 class="section-title">Office Address</h3>
 								<div class="contact-info">
-									<!-- <h5>Address</h5>
-									<p>5th Street, Carl View - United States</p>
-									
-									<h5>Email</h5>
-									<p>info@webthemez.com</p>
-									
-									<h5>Phone</h5>
-									<p>+09 123 1234 123</p> -->
 									<?php
 									$file = fopen("data.txt","r");
 
