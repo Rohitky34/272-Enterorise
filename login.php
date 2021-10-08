@@ -1,7 +1,5 @@
-<h2> Welcome </h2>
-
 <?php
 if($_POST['username']){
-    echo $_POST['username'];
+    echo "<h2>Welocme $_POST['username']</h2>";
 }
 ?>
