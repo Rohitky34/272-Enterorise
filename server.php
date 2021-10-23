@@ -8,10 +8,10 @@ $homePhone = "";
 $cellPhone = "";
 $password = "";
 $servername = "localhost";
-$username = "root";
+$username = "admin";
 $password1 = "Hasbro@602";
 
-$db = mysqli_connect($servername, $username, $password1, 'CMPE272');
+$db = mysqli_connect($servername, $username, $password1, 'company_272');
 if (!$db) {
     die("Connection failed: " . mysqli_connect_error());
   }
