@@ -22,6 +22,10 @@
 </head>
 <body>
 	<!-- Fixed navbar -->
+    <div>
+       <h1>Whole Market palce</h1> 
+       <button type="button">Market Place</button>
+    </div>
 	<div class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
