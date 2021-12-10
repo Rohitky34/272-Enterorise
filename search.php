@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "admin";
 $password1 = "Hasbro@602";
-$conn = mysqli_connect($servername, $username, $password1, 'company_272');
+$conn = mysqli_connect($servername, $username, $password1, 'cmpe_272_db');
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
   }
