@@ -24,8 +24,7 @@
 	<!-- Fixed navbar -->
     <div>
        <h1>Whole Market palce</h1> 
-       <button id="myButton" class="float-left submit-button" style="background:red; cursor:pointer">>Market Place</button>
-       s
+       <button id="myButton" class="float-left submit-button" style="background:; cursor:pointer">Market Place</button>
         <script type="text/javascript">
             document.getElementById("myButton").onclick = function () {
                 location.href = "market.php";
