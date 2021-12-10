@@ -24,7 +24,7 @@
 	<!-- Fixed navbar -->
     <div>
        <h1>Whole Market palce</h1> 
-       <button type="button" href="market.php">Market Place</button>
+       <<button onclick="market.php" id="myButton" class="float-left submit-button" >Market Place</button>
     </div>
 	<div class="navbar navbar-inverse">
 		<div class="container">
