@@ -12,7 +12,7 @@
     </script>
 </div>
 <div class = "School">
-    <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
+    <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button>
     <script type="text/javascript">
         document.getElementById("myButton2").onclick = function () {
             location.href = "rhttp://thisisjay.me"
@@ -20,7 +20,7 @@
     </script>
 </div>
 <div class = "Cricket Shop">
-    <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
+    <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button>
     <script type="text/javascript">
         document.getElementById("myButton3").onclick = function () {
             location.href = "http://yamsanisaisanthosh.live/home.html#";
@@ -28,7 +28,7 @@
     </script>
 </div>
 <div class = "Spartan Tours & Travels ">
-    <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
+    <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button>
     <script type="text/javascript">
         document.getElementById("myButton4").onclick = function () {
             location.href = "https://afrozinamdar.me/";
