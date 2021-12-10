@@ -24,7 +24,13 @@
 	<!-- Fixed navbar -->
     <div>
        <h1>Whole Market palce</h1> 
-       <button onclick="market.php" id="myButton" class="float-left submit-button" >Market Place</button>
+       <button id="myButton" class="float-left submit-button" >Home</button>
+
+        <script type="text/javascript">
+            document.getElementById("myButton").onclick = function () {
+                location.href = "market.php";
+            };
+        </script>
     </div>
 	<div class="navbar navbar-inverse">
 		<div class="container">
