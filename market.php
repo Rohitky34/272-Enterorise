@@ -7,7 +7,7 @@
     <button id="myButton1" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
     <script type="text/javascript">
         document.getElementById("myButton1").onclick = function () {
-            location.href = "rohitky.me";
+            location.href = "http://rohitky.me/";
         };
     </script>
 </div>
@@ -15,7 +15,7 @@
     <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button>
     <script type="text/javascript">
         document.getElementById("myButton2").onclick = function () {
-            location.href = "rhttp://thisisjay.me"
+            location.href = "http://thisisjay.me/";
         };
     </script>
 </div>
@@ -31,7 +31,7 @@
     <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button>
     <script type="text/javascript">
         document.getElementById("myButton4").onclick = function () {
-            location.href = "https://afrozinamdar.me/";
+            location.href = "http://afrozinamdar.me/";
         };
     </script>
 </div>
