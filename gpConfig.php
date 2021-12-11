@@ -11,7 +11,7 @@ include_once 'src/contrib/Google_Oauth2Service.php';
 $clientId = '248264700584-l48hg6auvgh7posmlit4lpaqagiagb61.apps.googleusercontent.com'; //Google client ID
 $clientSecret = 'HwafYxaTbfHyLisJ3GNtlkXK'; //Google client secret
 
-$redirectURL = 'http://www.rohiky.me/services.php'; //Callback URL
+$redirectURL = 'http://rohiky.me/services.php'; //Callback URL
 
 //Call Google API
 $gClient = new Google_Client();
