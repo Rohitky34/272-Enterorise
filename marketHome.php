@@ -7,7 +7,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
-print_r($_COOKIE);
+    print_r($_COOKIE["email"]);
     if (!isset($_COOKIE["email"]))
     {
    header('location:signedIn.php');
