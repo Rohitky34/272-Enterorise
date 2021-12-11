@@ -58,7 +58,7 @@
 
 <body>
     <div class = "RealEstate">
-        <button id="myButton1" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
+        <button id="myButton1" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>-->
         <?php
          echo $Count_Estate;
         ?>
@@ -71,7 +71,7 @@
     <div class = "School">
         <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button> -->
         <?php
-         echo $company_name_school;
+         echo $Count_School;
         ?>
         <script type="text/javascript"> -->
             document.getElementById("myButton2").onclick = function () {
@@ -80,9 +80,9 @@
         </script>
     </div>
     <div class = "Cricket Shop">
-        <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button>
+        <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button> -->
         <?php
-         echo $company_name_spartan;
+         echo $Count_Spartan;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton3").onclick = function () {
@@ -91,9 +91,9 @@
         </script>
     </div>
     <div class = "Spartan Tours & Travels ">
-        <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button>
+        <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button> -->
         <?php
-         echo $company_name_cricket;
+         echo $$Count_Cricket;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton4").onclick = function () {
