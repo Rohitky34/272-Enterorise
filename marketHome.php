@@ -21,7 +21,7 @@
     {
    header('location:signedIn.php');
     }
-    $company_name_school= 'B-School';
+    $company_name_school= 'B_School';
     $company_name_real_estate= 'Real_Estate';
     $company_name_spartan= 'Spartan';
     $company_name_cricket= 'Cricket';
