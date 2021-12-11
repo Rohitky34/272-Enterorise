@@ -8,8 +8,8 @@ include_once 'src/contrib/Google_Oauth2Service.php';
 /*
  * Configuration and setup Google API
  */
-$clientId = '800420095154-41nsucj7np4qolencu4l83vctrp34dil.apps.googleusercontent.com'; //Google client ID
-$clientSecret = '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'; //Google client secret
+$clientId = '800420095154-8edpdijeulvsg3j57ipdagva7sigmiq9.apps.googleusercontent.com'; //Google client ID
+$clientSecret = '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'; //Google client secret
 
 $redirectURL = 'http://rohitky.me/services.php'; //Callback URL
 
