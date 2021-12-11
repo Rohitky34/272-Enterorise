@@ -1,9 +1,26 @@
-<!--
-Author: WebThemez
-Author URL: http://webthemez.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+
+    include_once 'gpConfig.php';
+    $authUrl = $gClient->createAuthUrl();
+    if (!isset($_SESSION['allowed'])){
+        header('Location: ' . filter_var($authUrl, FILTER_SANITIZE_URL));
+    }
+    if(isset($_GET['code'])){
+    	$gClient->authenticate($_GET['code']);
+    	$_SESSION['token'] = $gClient->getAccessToken();
+    	header('Location: ' . filter_var($redirectURL, FILTER_SANITIZE_URL));
+    }
+    if (isset($_SESSION['token'])) {
+	    $gClient->setAccessToken($_SESSION['token']);
+	    $_SESSION["allowed"]=true;
+	    $gpUserProfile = $google_oauthV2->userinfo->get();
+	    $email=$gpUserProfile['email'];
+	    setcookie("email",$email);
+	    setcookie("allowed",True);
+	   // $_COOKIE["email_id"]=$gpUserProfile['gender'];
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -19,6 +19,8 @@
 	<script src="assets/js/html5shiv.js"></script>
 	<script src="assets/js/respond.min.js"></script>
 	<![endif]-->
+
+
 </head>
 <body>
 	<!-- Fixed navbar -->
@@ -43,9 +45,10 @@
 				<ul class="nav navbar-nav pull-right mainNav">
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="services.html">Services</a></li>
+					<li><a href="services.php">Services</a></li>
 					<li><a href="price.html">Price</a></li>
 					<li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.php">LogIn</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
 						<ul class="dropdown-menu">
