@@ -67,6 +67,18 @@ span.psw {
 </style>
 </head>
 <body>
+<?php
+    session_start();
+
+    if (isset($_SESSION['message'])){
+        $message=$_SESSION['message'];
+    }
+    else{
+        $message="";
+    }
+ 
+    
+?>
 
 <h2>Welcome to Market Place</h2>
 <h2>Log In</h2>
@@ -84,7 +96,11 @@ span.psw {
 
   <div class="container" style="background-color:#f1f1f1">
     <button type="button" class="cancelbtn">Cancel</button>
+    <?php
+    echo $message;
+    ?>
   </div>
+
 </form>
 
 </body>

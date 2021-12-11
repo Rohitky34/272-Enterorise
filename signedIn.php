@@ -23,7 +23,8 @@ if($result->num_rows){
     header('location:marketHome.php');
 
 }else{
-	echo "Failed";
+	$_SESSION["message"]="Username and Password do not match! Please try again";
+        header('location:market.php');
 }
 mysqli_close($conn);
 ?>
