@@ -30,33 +30,38 @@
     $sql="select visited from Tracking where email='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
     $Count_Estate = 0;
-    $row_estate = $result->fetch_assoc());
     if ($result->num_rows > 0) {
-        $Count_Estate = $row["visited"];
+         while($row = $result->fetch_assoc()) {
+            $Count_Estate = $row["visited"];
+        }
     } 
     //School
     $sql="select visited from Tracking where email='$company_name_school'";
     $result=mysqli_query($conn, $sql);
     $Count_School = 0;
-    $row_school = $result->fetch_assoc());
     if ($result->num_rows > 0) {
-        $Count_School = $row["visited"];
+        while($row = $result->fetch_assoc()) {
+            $Count_School = $row["visited"];
+        }
     } 
     //Spartan
     $sql="select visited from Tracking where email='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Spartan = 0;
-    $row_spartan = $result->fetch_assoc());
     if ($result->num_rows > 0) {
-        $Count_Spartan = $row["visited"];
+        while($row = $result->fetch_assoc()) {
+            $Count_Spartan = $row["visited"];
+        }
     } 
     //Cricket
     $sql="select visited from Tracking where email='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Cricket = 0;
-    $row_cricket = $result->fetch_assoc());
     if ($result->num_rows > 0) {
-       $Count_Cricket = $row["visited"];
+        while($row = $result->fetch_assoc()) {
+            $Count_Cricket = $row["visited"];
+        }
+       
     } 
 ?>
 </head>
