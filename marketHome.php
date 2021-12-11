@@ -25,33 +25,38 @@
     $company_name_real_estate= 'Real_Estate';
     $company_name_spartan= 'Spartan';
     $company_name_cricket= 'Cricket';
-    //School
-    $sql="select visited from Tracking where email='$company_name_school'";
-    $result=mysqli_query($conn, $sql);
-    $max_Count = 0;
-    if ($result->num_rows > 0) {
-        $Count_School = $row["visited"];
-    } 
+
     //Real Estate 
     $sql="select visited from Tracking where email='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
     $Count_Estate = 0;
+    $row_estate = $result->fetch_assoc());
     if ($result->num_rows > 0) {
         $Count_Estate = $row["visited"];
+    } 
+    //School
+    $sql="select visited from Tracking where email='$company_name_school'";
+    $result=mysqli_query($conn, $sql);
+    $Count_School = 0;
+    $row_school = $result->fetch_assoc());
+    if ($result->num_rows > 0) {
+        $Count_School = $row["visited"];
     } 
     //Spartan
     $sql="select visited from Tracking where email='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Spartan = 0;
+    $row_spartan = $result->fetch_assoc());
     if ($result->num_rows > 0) {
         $Count_Spartan = $row["visited"];
     } 
     //Cricket
     $sql="select visited from Tracking where email='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
-    $company_name_cricket = 0;
+    $Count_Cricket = 0;
+    $row_cricket = $result->fetch_assoc());
     if ($result->num_rows > 0) {
-        $company_name_cricket = $row["visited"];
+       $Count_Cricket = $row["visited"];
     } 
 ?>
 </head>
@@ -93,7 +98,7 @@
     <div class = "Spartan Tours & Travels ">
         <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button> -->
         <?php
-         echo $$Count_Cricket;
+         echo $Count_Cricket;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton4").onclick = function () {
