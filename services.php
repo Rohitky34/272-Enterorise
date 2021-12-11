@@ -1,5 +1,5 @@
 <?php 
-session_start();
+
 include_once 'gpConfig.php';
 $authUrl = $gClient->createAuthUrl();
 if (!isset($_SESSION['allowed'])){
