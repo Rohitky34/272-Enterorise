@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $visited =0;
 $curl = curl_init();
 $email=$_COOKIE["email"];
@@ -22,7 +22,7 @@ curl_setopt_array($curl, array(
     'Content-Type: application/json'
   ),
 ));
-?>
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
