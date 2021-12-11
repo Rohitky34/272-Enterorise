@@ -13,8 +13,7 @@ if (!$conn) {
 
 $email = $emailID= $_POST['email']; 
 $passWord = $password= $_POST['password'];
-echo $email;
-echo $passWord;
+
 
 $sql="select * from users where email='$email' and password='$passWord'";
 $result=mysqli_query($conn, $sql);
