@@ -4,17 +4,17 @@ $servername = "localhost";
 $username = "admin";
 $password = "Hasbro@602";
 $dbname = "cmpe_272_db";
-
-$email = $emailID= $_POST['email']; 
-$passWord = $password= $_POST['password'];
-echo $email;
-echo $passWord;
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
+
+$email = $emailID= $_POST['email']; 
+$passWord = $password= $_POST['password'];
+echo $email;
+echo $passWord;
 
 $sql="select * from users where email='$email' and password='$passWord'";
 $result=mysqli_query($conn, $sql);
