@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "admin";
-$password1 = "Hasbro@602";
+$password = "Hasbro@602";
 $dbname = "cmpe_272_db";
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
