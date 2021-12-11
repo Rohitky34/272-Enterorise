@@ -1,12 +1,18 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
+print_r($_COOKIE);
     if (!isset($_COOKIE["email"]))
     {
    header('location:signedIn.php');
     }
+    
 ?>
 </head>
 
