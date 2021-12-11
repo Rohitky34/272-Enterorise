@@ -3,7 +3,7 @@
 // Google API configuration
 define('GOOGLE_CLIENT_ID', '241666992878-marq2mhvmhus7tpu6v05pai77mq4ec4j.apps.googleusercontent.com');
 define('GOOGLE_CLIENT_SECRET', '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');
-define('GOOGLE_REDIRECT_URL', 'http://www.rohitky.me/check.php');
+define('GOOGLE_REDIRECT_URL', 'http://rohitky.me/check.php');
 
 // Start session
 if(!session_id()){
