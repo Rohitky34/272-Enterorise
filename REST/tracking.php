@@ -16,7 +16,7 @@ $productName = $data->productName;
 $companyName = $data->companyName;
 $email = $data->email;
 
-$sql = "INSERT INTO tracking (email, product_name, company_name) VALUES ('$email','$productName', '$companyName')";
+$sql = "INSERT INTO Tracking (email, product_name, company_name) VALUES ('$email','$productName', '$companyName')";
 
 if ($conn->query($sql) === TRUE) {
     echo "True";
