@@ -5,9 +5,10 @@ $username = "admin";
 $password = "Hasbro@602";
 $dbname = "cmpe_272_db";
 
-$data= json_decode(file_get_contents("php://input"));
-$email =  $data->email;
-$passWord = $data->password;
+$email = $emailID= $_POST['email']; 
+$passWord = $password= $_POST['password'];
+echo $email;
+echo $passWord;
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
@@ -21,6 +22,7 @@ $result=mysqli_query($conn, $sql);
 //print_r($result->num_rows);
 if($result->num_rows){
     setcookie("email", $email, time() + 2 * 24 * 60 * 60);
+    $_SESSION["message"]="";
     header('location:marketHome.php');
 
 }else{
