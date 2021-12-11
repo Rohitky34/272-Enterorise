@@ -38,7 +38,6 @@
     //School
     $sql="select visited from Tracking where email='$company_name_school'";
     $result=mysqli_query($conn, $sql);
-    echo $result;
     $Count_School = 0;
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
@@ -46,7 +45,7 @@
             $Count_School = $row["visited"];
         }
     } else{
-        echo "Erro hai";
+        echo "Error hai";
     }
     //Spartan
     $sql="select visited from Tracking where email='$company_name_spartan'";
