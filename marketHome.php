@@ -13,6 +13,7 @@
    header('location:signedIn.php');
     }
     
+    
 ?>
 </head>
 
@@ -26,7 +27,7 @@
         </script>
     </div>
     <div class = "School">
-        <a href="http://thisisjay.me/" onClick= 'setcookie("email", $email, time() + 2 * 24 * 60 * 60)'>School</a>
+        <a href="http://thisisjay.me/" onClick= 'setcookie("email", $_COOKIE["email"], time() + 2 * 24 * 60 * 60)'>School</a>
         <!-- <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button> -->
         <!-- <script type="text/javascript">
             document.getElementById("myButton2").onclick = function () {
