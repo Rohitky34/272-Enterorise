@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
     include_once 'gpConfig.php';
     $authUrl = $gClient->createAuthUrl();
@@ -19,7 +19,7 @@
 	    setcookie("allowed",True);
 	   // $_COOKIE["email_id"]=$gpUserProfile['gender'];
     }
-?>
+?> -->
 
 <!DOCTYPE html>
 <html lang="en">
