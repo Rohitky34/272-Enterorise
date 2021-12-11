@@ -27,7 +27,7 @@
     $company_name_cricket= 'Cricket';
 
     //Real Estate 
-    $sql="select visited from Tracking where email='$company_name_real_estate'";
+    $sql="select visited from Tracking where company_name='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
     $Count_Estate = 0;
     if ($result->num_rows > 0) {
@@ -36,7 +36,7 @@
         }
     } 
     //School
-    $sql="select visited from Tracking where email='$company_name_school'";
+    $sql="select visited from Tracking where company_name='$company_name_school'";
     $result=mysqli_query($conn, $sql);
     $Count_School = 0;
     if ($result->num_rows > 0) {
@@ -48,7 +48,7 @@
         echo "Error hai";
     }
     //Spartan
-    $sql="select visited from Tracking where email='$company_name_spartan'";
+    $sql="select visited from Tracking where company_name='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Spartan = 0;
     if ($result->num_rows > 0) {
@@ -57,7 +57,7 @@
         }
     } 
     //Cricket
-    $sql="select visited from Tracking where email='$company_name_spartan'";
+    $sql="select visited from Tracking where company_name='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Cricket = 0;
     if ($result->num_rows > 0) {
