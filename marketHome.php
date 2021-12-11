@@ -26,12 +26,13 @@
         </script>
     </div>
     <div class = "School">
-        <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button>
-        <script type="text/javascript">
+        <a href="http://thisisjay.me/" onClick= 'setcookie("email", $email, time() + 2 * 24 * 60 * 60)'>
+        <!-- <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button> -->
+        <!-- <script type="text/javascript">
             document.getElementById("myButton2").onclick = function () {
                 location.href = "http://thisisjay.me/";
             };
-        </script>
+        </script> -->
     </div>
     <div class = "Cricket Shop">
         <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button>
