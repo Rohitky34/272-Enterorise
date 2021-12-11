@@ -21,17 +21,38 @@
     {
    header('location:signedIn.php');
     }
-    $email= 'rohit@gmail.com';
-    $sql="select * from Tracking where email='$email";
+    $company_name_school= 'B-School';
+    $company_name_real_estate= 'Real_Estate';
+    $company_name_spartan= 'Spartan';
+    $company_name_cricket= 'Cricket';
+    //School
+    $sql="select visited from Tracking where email='$company_name_school'";
     $result=mysqli_query($conn, $sql);
     $max_Count = 0;
     if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        $max_Count = $row["visited"];
-    }
-    } else {
-    echo "0 results";
-    }
+        $Count_School = $row["visited"];
+    } 
+    //Real Estate 
+    $sql="select visited from Tracking where email='$company_name_real_estate'";
+    $result=mysqli_query($conn, $sql);
+    $Count_Estate = 0;
+    if ($result->num_rows > 0) {
+        $Count_Estate = $row["visited"];
+    } 
+    //Spartan
+    $sql="select visited from Tracking where email='$company_name_spartan'";
+    $result=mysqli_query($conn, $sql);
+    $Count_Spartan = 0;
+    if ($result->num_rows > 0) {
+        $Count_Spartan = $row["visited"];
+    } 
+    //Cricket
+    $sql="select visited from Tracking where email='$company_name_spartan'";
+    $result=mysqli_query($conn, $sql);
+    $company_name_cricket = 0;
+    if ($result->num_rows > 0) {
+        $company_name_cricket = $row["visited"];
+    } 
 ?>
 </head>
 
@@ -39,7 +60,7 @@
     <div class = "RealEstate">
         <button id="myButton1" class="float-left submit-button" style="background:; cursor:pointer">Real Estate Services</button>
         <?php
-         echo $max_Count;
+         echo $Count_Estate;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton1").onclick = function () {
@@ -50,7 +71,7 @@
     <div class = "School">
         <button id="myButton2" class="float-left submit-button" style="background:; cursor:pointer">School Services</button> -->
         <?php
-         echo $max_Count;
+         echo $company_name_school;
         ?>
         <script type="text/javascript"> -->
             document.getElementById("myButton2").onclick = function () {
@@ -60,6 +81,9 @@
     </div>
     <div class = "Cricket Shop">
         <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button>
+        <?php
+         echo $company_name_spartan;
+        ?>
         <script type="text/javascript">
             document.getElementById("myButton3").onclick = function () {
                 location.href = "http://yamsanisaisanthosh.live/home.html#";
@@ -68,6 +92,9 @@
     </div>
     <div class = "Spartan Tours & Travels ">
         <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button>
+        <?php
+         echo $company_name_cricket;
+        ?>
         <script type="text/javascript">
             document.getElementById("myButton4").onclick = function () {
                 location.href = "http://afrozinamdar.me/";
