@@ -17,7 +17,8 @@ $companyName = $data->companyName;
 $email = $data->email;
 $visited = $data->visited;
 
-$sql = "UPDATE  Tracking SET visited = $visited where company_name = $companyName";
+
+$sql = "UPDATE  Tracking SET visited = $visited where company_name = '$companyName'";
 if ($conn->query($sql) === TRUE) {
     echo "True";
 } else {
