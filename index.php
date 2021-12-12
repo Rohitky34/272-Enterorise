@@ -1,3 +1,43 @@
+<?php
+$visited = 0;
+if(isset($_COOKIE)){
+  // $lastFive = array_slice($_COOKIE, -5);
+  // print_r($lastFive);
+  foreach($_COOKIE as $path=>$count){
+    // rsort($count);
+  foreach($count as $value){
+    $visited += $value;
+  }
+}
+}
+$curl = curl_init();
+$email="rohit@gmail.com";
+$array1=array();
+$array1['email']=$email;
+$array1['companyName']='Real_Estate';
+// $array1['productName']=$prod["Career"];
+$array1['visited'] = $visited;
+$data=json_encode($array1);
+curl_setopt_array($curl, array(
+CURLOPT_URL => 'http://rohitky.me/REST/tracking.php',
+CURLOPT_RETURNTRANSFER => true,
+CURLOPT_ENCODING => '',
+CURLOPT_MAXREDIRS => 10,
+CURLOPT_TIMEOUT => 0,
+CURLOPT_FOLLOWLOCATION => true,
+CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+CURLOPT_CUSTOMREQUEST => 'POST',
+CURLOPT_POSTFIELDS =>$data,
+CURLOPT_HTTPHEADER => array(
+'Content-Type: application/json'
+),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+?>
 
 <!DOCTYPE html>
 <html lang="en">

@@ -18,7 +18,7 @@
         </ul>
 
 <?php 
-$path = "courses";
+$path = "land";
 if (!isset($_COOKIE[$path]['count']))
 {
     ?>
