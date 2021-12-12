@@ -38,7 +38,6 @@
     $Count_School = 0;
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo $row;
             $Count_School = $row["visited"];
         }
     } 
@@ -60,11 +59,6 @@
             $Count_Spartan = $row["visited"];
         }
     } 
-    $ch =curl_init('http://thisisjay.me/userList.php');
-    curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    $result = curl_exec($ch);
-    echo $result;
 ?>
 
 </head>
