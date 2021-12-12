@@ -22,16 +22,16 @@
     $company_name_real_estate= 'Real_Estate';
     $company_name_spartan= 'Spartan';
     $company_name_cricket= 'Cricket';
-    print_r($_COOKIE);
+    // print_r($_COOKIE);
     //Real Estate 
     $sql="select visited from Tracking where company_name='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
-    $Count_Estate = 0;
-    if ($result->num_rows > 0) {
-         while($row = $result->fetch_assoc()) {
-            $Count_Estate = $row["visited"];
-        }
-    } 
+    $Count_Estate = $_COOKIE['count_real_estate'] ;
+    // if ($result->num_rows > 0) {
+    //      while($row = $result->fetch_assoc()) {
+    //         $Count_Estate = $row["visited"];
+    //     }
+    // } 
     //School
     $sql="select visited from Tracking where company_name='$company_name_school'";
     $result=mysqli_query($conn, $sql);
