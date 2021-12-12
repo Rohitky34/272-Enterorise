@@ -73,7 +73,7 @@
 					<div class="featured-box">
 						<i class="fa fa-cogs fa-2x"></i>
 						<div class="text">
-							<h3>Land</h3>
+							<h3><a href = "land.php">Land</a></h3>
                             Land is the baseline for all types of real property. Land typically refers to undeveloped property and vacant land. Developers acquire land and combine it with other properties (called assembly) and rezone it so they can increase the density and increase the value of the property.
 						</div>
 					</div>
@@ -82,7 +82,7 @@
 					<div class="featured-box">
 						<i class="fa fa-leaf fa-2x"></i>
 						<div class="text">
-							<h3>Residential</h3>
+							<h3><a href = "residential.php">Residential</a></h3>
 							Residential real estate consists of housing for individuals, families, or groups of people. This is the most common type of estate and is the asset class that most people are familiar with. Within residential, there are single-family homes, apartments, condominiums, townhouses, and other types of living arrangements.
 						</div>
 					</div>
@@ -91,8 +91,8 @@
 					<div class="featured-box">
 						<i class="fa fa-tachometer fa-2x"></i>
 						<div class="text">
-							<h3>Commercial</h3>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<h3><a href = "commercial.php">Commercial</a></h3>
+							Commercial property refers to land and buildings that are used by businesses to carry out their operations. Examples include shopping malls, individual stores, office buildings, parking lots, medical centers, and hotels
 						</div>
 					</div>
 				</div>
@@ -102,8 +102,8 @@
 					<div class="featured-box">
 						<i class="fa fa-eye fa-2x"></i>
 						<div class="text">
-							<h3>Industrial</h3>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<h3><a href = "industrial.php">Industrial</a></h3>
+							Industry property refers to land and buildings that are used by businesses to carry out their operations. Examples include shopping malls, individual stores, office buildings, parking lots, medical centers, and hotels
 						</div>
 					</div>
 				</div>
@@ -111,8 +111,9 @@
 					<div class="featured-box">
 						<i class="fa fa-quote-right fa-2x"></i>
 						<div class="text">
-							<h3>Property Data</h3>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<h3><a href = "propertData.php">Property data</a></h3>
+							Property Data refers to land and buildings that are used by businesses to carry out their operations. Examples include shopping malls, individual stores, office buildings, parking lots, medical centers, and hotels
+							
 						</div>
 					</div>
 				</div>
@@ -120,8 +121,8 @@
 					<div class="featured-box">
 						<i class="fa fa-arrows fa-2x"></i>
 						<div class="text">
-							<h3>Land Data</h3>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							<h3><a href = "landData.php">Land Data</a></h3>
+							Land Data refers to land and buildings that are used by businesses to carry out their operations. Examples include shopping malls, individual stores, office buildings, parking lots, medical centers, and hotels
 						</div>
 					</div>
 				</div>
