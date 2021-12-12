@@ -19,22 +19,23 @@
 
 <?php 
 $path = "landData";
-if (!isset($_COOKIE[$path]['count']))
+$email = $_COOKIE["email"];
+if (!isset($_COOKIE[$email][$path]['count']))
 {
     ?>
     Welcome! This is the first time you have viewed this page. 
 <?php
     $cookie = 1;
-    setcookie($path."[count]", $cookie);
+    setcookie($email[$path]."[count]", $cookie);
 }
 else
 {
-    $cookie = ++$_COOKIE[$path]['count'];
+    $cookie = ++$_COOKIE[$email][$path]['count'];
     // $path = "courses";
-    setcookie($path."[count]", $cookie);
+    setcookie($email[$path]."[count]", $cookie);
     // setcookie($_COOKIE['path']['count'], $cookie);
     ?>  
-    You have viewed this page <?= $_COOKIE[$path]['count'] ?> times. 
+    You have viewed this page <?= $_COOKIE[$email][$path]['count'] ?> times. 
 <?php
     }
 ?>
