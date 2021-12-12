@@ -1,4 +1,31 @@
-
+<?php
+	$servername = "localhost";
+	$username = "admin";
+	$password = "Hasbro@602";
+	$dbname = "cmpe_272_db";
+	// Create connection
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	// Check connection
+	if (!$conn) {
+		die("Connection failed: " . mysqli_connect_error());
+	}
+    $Count_Estate = 0;
+    $sql="select visited from Tracking where company_name='Real_Estate'";
+    $result=mysqli_query($conn, $sql);
+    if ($result->num_rows > 0) {
+         while($row = $result->fetch_assoc()) {
+            $Count_Estate = $row["visited"];
+        }
+    }
+	$Count_Estate =  0;
+	$sql = "UPDATE  Tracking SET visited =  $Count_Estate where company_name = 'Real_Estate'";
+	if ($conn->query($sql) === TRUE) {
+    // echo "True";
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
+	
+?>
 
 <!DOCTYPE html>
 <html lang="en">
