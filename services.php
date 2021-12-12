@@ -9,7 +9,15 @@
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	$sql = "UPDATE  Tracking SET visited =  visited+1 where company_name = 'Real_Estate'";
+    $Count_Estate = 0;
+    $sql="select visited from Tracking where company_name='Real_Estate'";
+    $result=mysqli_query($conn, $sql);
+    if ($result->num_rows > 0) {
+         while($row = $result->fetch_assoc()) {
+            $Count_Estate = $row["visited"];
+        }
+    } 
+	$sql = "UPDATE  Tracking SET visited =  $Count_Estate+1 where company_name = 'Real_Estate'";
 	
 ?>
 
