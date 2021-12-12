@@ -19,6 +19,7 @@
 
 <?php 
 $path = "land";
+print_r($_COOKIE);
 if (!isset($_COOKIE[$path]['count']))
 {
     ?>
