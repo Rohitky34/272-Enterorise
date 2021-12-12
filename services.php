@@ -16,7 +16,10 @@
          while($row = $result->fetch_assoc()) {
             $Count_Estate = $row["visited"];
         }
-    } 
+    }else{
+		echo "error aala re";
+	}
+	echo $Count_Estate;
 	$sql = "UPDATE  Tracking SET visited =  $Count_Estate+1 where company_name = 'Real_Estate'";
 	
 ?>
