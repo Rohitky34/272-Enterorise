@@ -47,8 +47,8 @@
     } else{
         echo "Error hai";
     }
-    //Spartan
-    $sql="select visited from Tracking where company_name='$company_name_spartan'";
+    //Cricket
+    $sql="select visited from Tracking where company_name='$company_name_cricket'";
     $result=mysqli_query($conn, $sql);
     $Count_Spartan = 0;
     if ($result->num_rows > 0) {
@@ -56,8 +56,8 @@
             $Count_Spartan = $row["visited"];
         }
     } 
-    //Cricket
-    $sql="select visited from Tracking where company_name='$company_name_cricket'";
+    //Spartan
+    $sql="select visited from Tracking where company_name='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
     $Count_Cricket = 0;
     if ($result->num_rows > 0) {
@@ -99,7 +99,7 @@
     <div class = "Cricket Shop">
         <button id="myButton3" class="float-left submit-button" style="background:; cursor:pointer">Cricket Shop</button> -->
         <?php
-         echo $Count_Spartan;
+         echo $Count_Cricket;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton3").onclick = function () {
@@ -110,7 +110,7 @@
     <div class = "Spartan Tours & Travels ">
         <button id="myButton4" class="float-left submit-button" style="background:; cursor:pointer">Spartan Tours & Travels</button> -->
         <?php
-         echo $Count_Cricket;
+         echo $Count_Spartan;
         ?>
         <script type="text/javascript">
             document.getElementById("myButton4").onclick = function () {
