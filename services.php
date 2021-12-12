@@ -21,6 +21,11 @@
 	}
 	echo $Count_Estate += 1;
 	$sql = "UPDATE  Tracking SET visited =  $Count_Estate where company_name = 'Real_Estate'";
+	if ($conn->query($sql) === TRUE) {
+    echo "True";
+	} else {
+		echo "Error: " . $sql . "<br>" . $conn->error;
+	}
 	
 ?>
 
