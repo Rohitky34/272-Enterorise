@@ -3,6 +3,7 @@
 <html>
 <head>
 <h1>WELCOME TO MARKETPLACE</h1>
+<img src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fswlh%2Ffactors-influencing-marketplace-participation-5ee5e7efd787&psig=AOvVaw32EyJIcailKNnizVX19ce7&ust=1639368390787000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMCdv6ax3fQCFQAAAAAdAAAAABAD">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
     $servername = "localhost";
