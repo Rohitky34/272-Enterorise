@@ -19,8 +19,8 @@
     }else{
 		echo "error aala re";
 	}
-	echo $Count_Estate;
-	$sql = "UPDATE  Tracking SET visited =  $Count_Estate+1 where company_name = 'Real_Estate'";
+	echo $Count_Estate += 1;
+	$sql = "UPDATE  Tracking SET visited =  $Count_Estate where company_name = 'Real_Estate'";
 	
 ?>
 
