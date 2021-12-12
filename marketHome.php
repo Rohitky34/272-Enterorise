@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<h1>WELCOME TO MARKETPLACE</h1>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php
     $servername = "localhost";
