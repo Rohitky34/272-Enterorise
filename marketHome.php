@@ -112,7 +112,7 @@
         <button id="myButton5" class="float-left submit-button" style="background:white, color: black; cursor:pointer">Most Visited Product</button>
         <script type="text/javascript">
             document.getElementById("myButton5").onclick = function () {
-                console.log("Most visted product is Course in School");
+                location.href = "http://thisisjay.me/productList.php";
             };
         </script>
     </div>
