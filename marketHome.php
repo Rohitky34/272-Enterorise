@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +22,7 @@
     $company_name_real_estate= 'Real_Estate';
     $company_name_spartan= 'Spartan';
     $company_name_cricket= 'Cricket';
-
+    print_r($_COOKIE);
     //Real Estate 
     $sql="select visited from Tracking where company_name='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
@@ -66,9 +63,6 @@
         }
        
     } 
-
-    
-
 ?>
 
 </head>
