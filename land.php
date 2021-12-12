@@ -19,6 +19,5 @@
 
 <?php 
 $path = "land";
-print_r($_COOKIE);
 
 ?>
