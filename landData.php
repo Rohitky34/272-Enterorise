@@ -20,6 +20,7 @@
 <?php 
 $path = "landData";
 $email = $_COOKIE["email"];
+print_r($_COOKIE);
 if (!isset($_COOKIE[$email][$path]['count']))
 {
     ?>
