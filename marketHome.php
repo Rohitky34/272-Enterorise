@@ -50,19 +50,19 @@
     //Cricket
     $sql="select visited from Tracking where company_name='$company_name_cricket'";
     $result=mysqli_query($conn, $sql);
-    $Count_Spartan = 0;
+    $Count_Cricket = 0;
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            $Count_Spartan = $row["visited"];
+            $Count_Cricket = $row["visited"];
         }
     } 
     //Spartan
     $sql="select visited from Tracking where company_name='$company_name_spartan'";
     $result=mysqli_query($conn, $sql);
-    $Count_Cricket = 0;
+    $Count_Spartan = 0;
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            $Count_Cricket = $row["visited"];
+            $Count_Spartan = $row["visited"];
         }
        
     } 
