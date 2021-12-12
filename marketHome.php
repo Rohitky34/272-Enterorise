@@ -57,7 +57,7 @@
         }
     } 
     //Cricket
-    $sql="select visited from Tracking where company_name='$company_name_spartan'";
+    $sql="select visited from Tracking where company_name='$company_name_cricket'";
     $result=mysqli_query($conn, $sql);
     $Count_Cricket = 0;
     if ($result->num_rows > 0) {
