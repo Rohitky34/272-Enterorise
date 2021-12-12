@@ -108,6 +108,14 @@
             };
         </script>
     </div>
+    <div class = "Most_visited">
+        <button id="myButton5" class="float-left submit-button" style="background:white, color: black; cursor:pointer">Most Visited Product</button>
+        <script type="text/javascript">
+            document.getElementById("myButton5").onclick = function () {
+                console.log("Most visted product is Course in School");
+            };
+        </script>
+    </div>
 </body>
 </html>
 
