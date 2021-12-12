@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
-<h1>Courses offered by our School</h1>
+<h1>Industries</h1>
 <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.thespruce.com%2Fthmb%2FYUEde4e76xf3w31ikQk6OTWBkDc%3D%2F3475x2289%2Ffilters%3Afill(auto%2C1)%2Flarge-and-old-brick-industrial-building-175426710-98e94f0565724b5eb938d78727e0bfa5.jpg&imgrefurl=https%3A%2F%2Fwww.thespruce.com%2Fwhat-is-industrial-architecture-4796580&tbnid=CVSaHmDIIRbTlM&vet=12ahUKEwjkoM3Eqd30AhWIlJ4KHTFSBXEQMygGegUIARDeAQ..i&docid=Ni5YgQbCCi9jQM&w=3475&h=2289&q=industrial%20building%20images&ved=2ahUKEwjkoM3Eqd30AhWIlJ4KHTFSBXEQMygGegUIARDeAQ">
 <br>
 <ul>

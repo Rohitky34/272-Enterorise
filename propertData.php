@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
-<h1>Courses offered by our School</h1>
+<h1>Property Data</h1>
 <img src="https://www.google.com/search?q=property+images&rlz=1C1GCEA_enUS921US921&tbm=isch&source=iu&ictx=1&fir=J_9eY5Ca6vEC9M%252Ce9K1cRi3eU2uWM%252C_%253B8gSi_cWcyjxeWM%252CG9I-DR-NA4k42M%252C_%253BDXzfbFG7YBXivM%252Ce9K1cRi3eU2uWM%252C_%253BPCj5VWGURIThbM%252CG9I-DR-NA4k42M%252C_%253BnoJy3G_-XsTcZM%252C4p4bk_SRk6CfPM%252C_%253BhuZRAILPrVb5fM%252CSbnxrQvhNIuGfM%252C_%253BRKXj11vZoC1dhM%252CCNEUoRLY6-rkQM%252C_%253BdRoL-b_0v_1_6M%252CSbnxrQvhNIuGfM%252C_%253BD4DpBI1TLm5EuM%252Ct4N21jwB4CMcdM%252C_%253B7NQJLL-bu5bg9M%252Cduv88je_E-KvRM%252C_%253Bko8RozFdJsKVsM%252C4p4bk_SRk6CfPM%252C_%253BDihEIsW_r6MhFM%252CCNEUoRLY6-rkQM%252C_&vet=1&usg=AI4_-kTilshA7vhCOHck2mOsqJH4n8j1JQ&sa=X&sqi=2&ved=2ahUKEwj5zdnsqd30AhUQLewKHZpEDakQ9QF6BAgFEAE#imgrc=J_9eY5Ca6vEC9M">
 <br>
 <ul>

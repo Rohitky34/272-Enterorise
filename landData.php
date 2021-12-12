@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="font/css/font-awesome.min.css" rel="stylesheet">
-<h1>Courses offered by our School</h1>
+<h1>Land Data</h1>
 <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.eea.europa.eu%2Fdata-and-maps%2Ffigures%2Ftrends-in-the-share-of-agricultural-land-managed-by-low-input-medium-input-or-high-input-farm-types%2Fimage_large&imgrefurl=https%3A%2F%2Fwww.eea.europa.eu%2Fdata-and-maps%2Ffigures%2Ftrends-in-the-share-of-agricultural-land-managed-by-low-input-medium-input-or-high-input-farm-types&tbnid=vLWqqmIl2HatTM&vet=12ahUKEwi4rL6Oqt30AhUMop4KHWr-C-MQMygLegUIARDFAQ..i&docid=g0Xi7SpVJzVtyM&w=768&h=717&q=agriculture%20land%20data%20images&ved=2ahUKEwi4rL6Oqt30AhUMop4KHWr-C-MQMygLegUIARDFAQ">
 <br>
 <ul>
