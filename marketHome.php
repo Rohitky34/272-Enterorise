@@ -110,7 +110,9 @@
             };
         </script>
     </div>
-    <?php
+</body>
+</html>
+<?php
         $ch =curl_init('http://thisisjay.me/productList.php');
 
         curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
@@ -124,6 +126,4 @@
         // $res =json_decode($result);
 ?>
 
-</body>
-</html>
 
