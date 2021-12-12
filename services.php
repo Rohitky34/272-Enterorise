@@ -9,7 +9,7 @@
 	if (!$conn) {
 		die("Connection failed: " . mysqli_connect_error());
 	}
-	$sql = "UPDATE  Tracking SET visited =  visited+1 where company_name = '$companyName'";
+	$sql = "UPDATE  Tracking SET visited =  visited+1 where company_name = 'Real_Estate'";
 	
 ?>
 
