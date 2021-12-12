@@ -1,4 +1,17 @@
-
+<?php
+	$servername = "localhost";
+	$username = "admin";
+	$password = "Hasbro@602";
+	$dbname = "cmpe_272_db";
+	// Create connection
+	$conn = mysqli_connect($servername, $username, $password, $dbname);
+	// Check connection
+	if (!$conn) {
+		die("Connection failed: " . mysqli_connect_error());
+	}
+	$sql = "UPDATE  Tracking SET visited =  visited+1 where company_name = '$companyName'";
+	
+?>
 
 <!DOCTYPE html>
 <html lang="en">

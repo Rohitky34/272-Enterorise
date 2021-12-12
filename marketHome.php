@@ -24,14 +24,14 @@
     $company_name_cricket= 'Cricket';
     // print_r($_COOKIE);
     //Real Estate 
+    $Count_Estate = 0;
     $sql="select visited from Tracking where company_name='$company_name_real_estate'";
     $result=mysqli_query($conn, $sql);
-    $Count_Estate = $_COOKIE['count_real_estate'] ;
-    // if ($result->num_rows > 0) {
-    //      while($row = $result->fetch_assoc()) {
-    //         $Count_Estate = $row["visited"];
-    //     }
-    // } 
+    if ($result->num_rows > 0) {
+         while($row = $result->fetch_assoc()) {
+            $Count_Estate = $row["visited"];
+        }
+    } 
     //School
     $sql="select visited from Tracking where company_name='$company_name_school'";
     $result=mysqli_query($conn, $sql);
@@ -41,9 +41,7 @@
             echo $row;
             $Count_School = $row["visited"];
         }
-    } else{
-        echo "Error hai";
-    }
+    } 
     //Cricket
     $sql="select visited from Tracking where company_name='$company_name_cricket'";
     $result=mysqli_query($conn, $sql);
