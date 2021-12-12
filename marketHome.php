@@ -112,7 +112,19 @@
         <button id="myButton5" class="float-left submit-button" style="background:white, color: black; cursor:pointer">Most Visited Product</button>
         <script type="text/javascript">
             document.getElementById("myButton5").onclick = function () {
-                location.href = "http://thisisjay.me/productList.php";
+                function randomIntFromInterval(min, max) { // min and max included 
+                return Math.floor(Math.random() * (max - min + 1) + min)
+                }
+
+                const rndInt = randomIntFromInterval(1, 3)
+                if(rndInt === 1){
+                    location.href = "http://thisisjay.me/productList.php";
+                }else if(rndInt === 2){
+                    location.href = "http://afrozinamdar.me/market.php";
+                }else{
+                    location.href = "http://rohitky.me/mostVisited.php";
+                }
+                
             };
         </script>
     </div>
