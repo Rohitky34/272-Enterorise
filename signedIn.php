@@ -20,7 +20,7 @@ $result=mysqli_query($conn, $sql);
 
 //print_r($result->num_rows);
 if($result->num_rows){
-    // setcookie("email", $email, time() + 2 * 24 * 60 * 60);
+    setcookie("email", $email, time() + 2 * 24 * 60 * 60);
     $_SESSION["message"]="";
     header('location:marketHome.php');
 

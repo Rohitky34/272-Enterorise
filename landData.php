@@ -37,5 +37,4 @@ else
     You have viewed this page <?= $_COOKIE[$path]['count'] ?> times. 
 <?php
     }
-    print_r($_COOKIE);
 ?>
