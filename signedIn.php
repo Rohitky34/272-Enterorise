@@ -18,8 +18,8 @@ $passWord = $password= $_POST['password'];
 $sql="select * from users where email='$email' and password='$passWord'";
 $result=mysqli_query($conn, $sql);
 $count = 0;
-$_SESSION["message"]="";
-header('location:marketHome.php');
+// $_SESSION["message"]="";
+// header('location:marketHome.php');
 //print_r($result->num_rows);
 // if($result->num_rows){
 //     // setcookie("email", $email, time() + 2 * 24 * 60 * 60);

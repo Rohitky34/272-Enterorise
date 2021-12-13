@@ -83,7 +83,7 @@ span.psw {
 <h2>Welcome to Market Place</h2>
 <h2>Log In</h2>
 
-<form action="signedIn.php" method="post">
+<form action="marketHome.php" method="post">
   <div class="container">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="email" required>
