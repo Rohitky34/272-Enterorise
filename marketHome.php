@@ -16,10 +16,10 @@
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
     }
-    if (!isset($_COOKIE["email"]))
-    {
-   header('location:signedIn.php');
-    }
+//     if (!isset($_COOKIE["email"]))
+//     {
+//    header('location:signedIn.php');
+//     }
     $company_name_school= 'B_School';
     $company_name_real_estate= 'Real_Estate';
     $company_name_spartan= 'Spartan';
